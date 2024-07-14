@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Python Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            Python Documentation
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#Overview">Overview<a></li>
+            <li><a class="nav-link" href="#Syntax">Syntax<a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types<a></li>
+            <li><a class="nav-link" href="#Control_Flow">Control Flow<a></li>
+            <li><a class="nav-link" href="#Functions">Functions<a></li>
+           
+
+        </ul>
+    </nav>
+
+    <div id="main-doc">
+        <section class="main-section" id="Overview">
+            <header class="header">Overview</header>
+            <p class="sub-header">What is Python?</p>
+            <p class="description">Python is a high-level, interpreted programming language known for its readability
+                and ease of use. Created by Guido van Rossum and first released in 1991, Python emphasizes code
+                readability with its notable use of significant indentation.</p>
+            <p class="description"> Here are five important bullet points about Python:</p>
+            <ul>
+                <li>Readable and Maintainable Code.</li>
+                <li>Extensive Standard Library.</li>
+                <li>Support for Multiple Programming Paradigms.</li>
+                <li>Dynamic Typing and Memory Management.</li>
+                <li>Vast Ecosystem and Community.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Syntax">
+            <header class="header">Syntax</header>
+            <p class="sub-header">Variables and Data Types</p>
+            <p class="description">Python uses dynamic typing, meaning you don't need to declare the type of a variable
+                explicitly.</p>
+            <div class="code-box"><code> x = 10</code> <span class="comment"># Integer</span> </div>
+            <div class="code-box"><code> y = 3.14 </code> <span class="comment"># Float</span> </div>
+            <div class="code-box"><code> name = "Alice"</code> <span class="comment"># String</span> </div>
+            <div class="code-box"><code> is_active = True</code> <span class="comment"># Boolean</span> </div>
+            <p class="sub-header">Basic Operations</p>
+            <div class="code-box"><code> a = 5 + 3  </code> <span class="comment"># Addition</span> </div>
+            <div class="code-box"><code>b = 5 - 3 </code> <span class="comment"># Subtraction</span> </div>
+            <div class="code-box"><code> c = 5 * 3 </code> <span class="comment"># Multiplication</span> </div>
+            <div class="code-box"><code> d = 5 / 3</code> <span class="comment"># Division</span> </div>
+            <div class="code-box"><code> e = 5 // 3</code> <span class="comment"># Floor division</span> </div>
+            <div class="code-box"><code> f = 5 % 3</code> <span class="comment"># Modulus</span> </div>
+            <div class="code-box"><code> g = 5 ** 3</code> <span class="comment"># Exponentiation</span> </div>
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <header class="header">Data Types</header>
+            <p class="sub-header">Numbers</p>
+            <ul>
+                <li>Integers: Whole numbers, e.g., '10', '-3'
+                </li>
+                <li>Floats: Decimal numbers, e.g., '3.14', '-2.7'</li>
+            </ul>
+            <p class="sub-header">Strings</p>
+            <p class="description">Strings are sequences of characters enclosed in quotes.</p>
+            <div class="code-box"><code> s = "Hello, World!"</code> </div>
+            <p class="sub-header">Lists</p>
+            <p class="description">Lists are ordered collections of items, which can be of different types.</p>
+            <div class="code-box"><code>fruits = ["apple", "banana", "cherry"]</code> </div>
+            <p class="sub-header">Tuples</p>
+            <p class="description">Tuples are similar to lists but are immutable.</p>
+            <div class="code-box"><code> coordinates = (10, 20)</code> </div>
+            <p class="sub-header">Dictionaries</p>
+            <p class="description">Dictionaries are collections of key-value pairs.</p>
+            <div class="code-box"><code>student = {
+                "name": "Alice",
+                "age": 25,
+                "courses": ["Math", "Science"]
+            }</code> </div>
+            <p class="sub-header">Sets</p>
+            <p class="description">Sets are unordered collections of unique items.</p>
+            <div class="code-box"><code> unique_numbers = {1, 2, 3, 4, 5}</code> </div>
+        </section>
+
+        <section class="main-section" id="Control_Flow">
+            <header class="header">Control Flow</header>
+            <p class="sub-header">Conditional Statements</p>
+            <div class="code-box">
+                <code>if x > 0:</code> <code class="indent">print("Positive")</code>
+                <code>elif x == 0:</code> <code class="indent"> print("Zero")</code>
+                <code>else:</code> <code class="indent">print("Negative")</code>
+            </div>
+            <p class="sub-header">For Loop</p>
+            <div class="code-box">
+                <code>for i in range(5):</code> <code class="indent"> print(i)</code>
+            </div>
+            <p class="sub-header">While Loop</p>
+            <div class="code-box">
+                <code>count = 0</code>
+                <code>while count &lt 5:</code> <code class="indent"> print(count)</code> <code
+                    class="indent">  count += 1</code>
+            </div>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header class="header">Functions</header>
+            <p class="description">Functions are blocks of reusable code that perform a specific task.
+            </p>
+            <p class="sub-header">Defining a Function</p>
+            <div class="code-box"><code>def greet(name):</code><code class="indent"> return f"Hello, {name}!"</code> </div>
+            <p class="sub-header">Calling a Function</p>
+            <div class="code-box"><code>message = greet("Alice")</code><code class="indent"> print(message)  # Output: Hello, Alice!</code> </div>
+        </section>
+
+       
+    </div>
+</body>
+
+</html>

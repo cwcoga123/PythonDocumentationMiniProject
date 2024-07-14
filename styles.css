@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@media all and (max-width: 750px){
+    #navbar {
+        width: 100px;
+    }
+}
+
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+:root {
+    --body-color: #35394c;
+    --sidebar-color: #aa9dbf;
+    --side-bar-header-color: #323d5b;
+}
+html {
+    box-sizing: border-box;
+}
+.main-section > ul >li {
+    font-size: 0.8rem;
+    padding-bottom:10px;
+}
+nav > ul >li:hover {
+    background-color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+}
+nav > ul >li >a[class="nav-link"]{
+    color: #ffffff;
+    display: block;
+    width: calc(100%-250px);
+    margin: 0 0.2rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.nav-link {
+    color: inherit;
+    /* Don't decorate the text */
+    text-decoration: none;
+   
+  }
+
+nav >ul {  
+    width: 100%;
+    padding-inline-start: 0;
+    height: 100%;
+    
+}
+
+
+body {
+    height: 100vh;
+    background: var(--body-color);
+    color: white;
+    margin: 0px;
+    overflow: scroll;
+    position: relative;
+    
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background: var(--sidebar-color);
+}
+
+#navbar header {
+    font-weight: bold;
+    position: static;
+    max-width: 250px;
+    color: #fff;
+    background: var(--side-bar-header-color);
+    padding: 10px;
+    
+}
+
+#main-doc {
+    position: absolute;
+    left: 250px;
+    width: calc(100% - 250px);
+    height: 100%;
+    
+}
+
+.main-section .header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgb(106, 84, 84);
+
+}
+
+.main-section {
+    margin :10px 20px;
+}
+
+.sub-header {
+    font-style: italic;
+    font-weight: 500;
+   margin:10px;
+}
+
+.description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-left:20px;
+}
+code {
+    font-family: monospace;
+}
+.code-box {
+    background-color: #000000;
+    width: calc(100% - 10vw);
+    padding: 20px 0 20px 20px;
+    justify-self: center;
+    border-radius: 3px;
+    margin-bottom:10px;
+    margin-left: 40px;;
+   
+}
+.comment {
+    font-family: monospace;
+    padding-left: 20px;
+    color:#949494;
+    font-weight: 900;
+}
+#Data_Types >ul{
+    display:block;
+}
+#Data_Types >ul>li{
+    margin-bottom:10px;
+    
+}
+
+.code-box code {
+    display:block;
+}
+
+.code-box code[class="indent"]{
+    margin-left:20px;
+}
